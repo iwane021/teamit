@@ -1,3 +1,15 @@
 {
-    "team": []
+    "team": [
+        {
+            "firstname": "RAISA",
+            "middlename": "",
+            "lastname": "ANDRIANA",
+            "jabatan": "ASISTEN KEPALA",
+            "email": "raisa@email.com",
+            "phoneext": "1234",
+            "profile": "uploads\/raisa.jpg",
+            "jobdesc": "Menyanyi solo dan membuat single lagu",
+            "motto": "Jujur dan pantang menyerah"
+        }
+    ]
 }
