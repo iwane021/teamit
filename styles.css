@@ -1,0 +1,192 @@
+body {
+    font-family: Helvetica, Arial;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#container {
+    font-size: 14px;
+    padding: 10px;
+    overflow: auto;
+}
+header, footer {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+h1 {
+    font-size: 2em;
+}
+fieldset {
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    padding: 10px;
+    overflow: hidden;
+}
+legend {
+    padding:0 5px;
+    text-align:left;
+}
+fieldset > div {
+    margin:10px 0;
+}
+fieldset > legend + div {
+    margin-top:0;
+}
+fieldset > div:last-child {
+    margin-bottom:0;
+}
+fieldset .fieldtextarea * {
+    vertical-align: middle;
+}
+textarea {
+    width: 400px;
+    height: 100px;
+    max-width: 100%;
+    margin: 9px 0;
+}
+label {
+    display:inline-block;
+    width:160px;
+}
+input {
+    width:200px;
+    padding: 6px 12px;
+    margin: 5px 0;
+}
+input[type="submit"],
+input[type="button"] {
+    width:auto;
+    padding: 8px 40px;
+}
+.profile {
+    border: 1px solid #a9a9a9;
+    width: 202px;
+}
+.help {
+    display:none;
+    font-size:90%;
+}
+input:focus + .help {
+    display:inline-block;
+}
+div.submit {
+    margin-left:165px;
+}
+.box-content { 
+    overflow: hidden; 
+}
+.left, 
+.right { 
+    float: left; 
+}
+.left { 
+    width: 35%; 
+} 
+.right { 
+    width: 65%; 
+}
+#output_image {
+    max-width:100px;
+}
+::-webkit-input-placeholder {
+   font-style: italic;
+   color: #ccc;
+}
+:-moz-placeholder {
+   font-style: italic;
+   color: #ccc;
+}
+::-moz-placeholder {
+   font-style: italic;
+   color: #ccc;
+}
+:-ms-input-placeholder {  
+   font-style: italic;
+   color: #ccc;
+}
+.marquee,
+.links {
+    width: 100%;
+    line-height: 10px;
+    box-shadow: inset 0 0 0 1px #ccc;
+	color: Black;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.marquee p:hover{
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 35s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.links {
+    margin-top:10px;
+    padding-left: 10px;
+}
+.links a { text-decoration-line: none; }
+.links a:hover { font-weight: bold; }
+
+.inactive {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s, opacity 0.1s linear;
+}
+
+.info-msg,
+.success-msg,
+.warning-msg,
+.error-msg {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.info-msg {
+    color: #059;
+    background-color: #BEF;
+}
+.success-msg {
+    color: #270;
+    background-color: #DFF2BF;
+}
+.warning-msg {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.error-msg {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+*:focus::-webkit-input-placeholder { opacity: 0; -webkit-transition: opacity .2s; transition: opacity .2s; }
+*:focus:-moz-placeholder { opacity: 0; -moz-transition: opacity .2s; transition: opacity .2s; }
+*:focus::-moz-placeholder { opacity: 0; -moz-transition: opacity .2s; transition: opacity .2s; }
+*:focus:-ms-input-placeholder { opacity: 0; -ms-transition: opacity .2s; transition: opacity .2s; }
+*:focus::placeholder { opacity: 0; transition: opacity .2s; }
+
+@media only screen and (max-width: 600px) {
+    input { 
+        max-width: 300px; 
+        padding: 6px 12px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .left, .right { 
+        width: 100%;
+        float: none; 
+    }
+
+}
